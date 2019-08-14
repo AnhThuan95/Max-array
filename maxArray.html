@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MAX ARRAY</title>
+</head>
+<style>
+    body {padding-top:50px}
+</style>
+<body>
+
+<script>
+    function maxArray() {
+        let x = [8, 6, 5, 8, 9, 5, 4, 6, 2, 0, 2];
+        document.write("Mang: " +x);
+        let max = x[0];
+        let index = 0;
+        for (let i = 0; i < x.length; i++) {
+            if (max < x[i]) {
+                max = x[i];
+                index = i;
+            }
+        }
+        alert("max = " + max + " at position " + index);
+    }
+    maxArray();
+</script>
+
+</body>
+</html>
